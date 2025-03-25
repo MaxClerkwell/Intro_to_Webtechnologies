@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Webtechnologien 2 – Einführung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+    <style>
+        .image-credit {
+            position: absolute;
+            bottom: -40em;
+            right: 0em;
+            font-size: 0.4em;
+            color: #fff; /* für dunkle Hintergründe */
+            background-color: rgba(0, 0, 0, 0.5); /* Optional für Lesbarkeit */
+            padding: 0.3em 0.6em;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .reveal .slides {
+            height: 100%;
+            top: 0;
+            margin-top: 0;
+        }
+
+        .reveal .slides>section {
+            min-height: 90%;
+        }
+
+        .reveal .slides>section>section {
+            min-height: 100%;
+        }
+
+        .svg-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2em;
+            height: 100vh;
+        }
+
+            .svg-box {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 8px;
+            width: 60%;
+            max-width: 600px;
+        }
+
+            .svg-box svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>Motivation</h1>
+          <p>Webtechnologien 2</p>
+          <p><small>Stephan Bökelmann - HSBO - SoSe 2025</small></p>
+        </section>
+
+        <section>
+            <section>
+                <h2>Informationszeitalter</h2>
+                <blockquote>
+                    "What counts is not raw muscle power or energy but information. This is the key ingredient of the new economy."<br>
+                    <small>– Daniel Bell, *The Coming of Post-Industrial Society*, 1973</small>
+                </blockquote>
+            </section>
+            <section>
+                <img src="https://maxclerkwell.github.io/svg_storage/fundamentals/pillars_of_IT/dark.svg" style="width: 120%;" />
+            </section>
+            <section>
+              <h2>Grundpfeiler der Informationstechnologie</h2>
+              <ul>
+                <li>Interaction</li>
+                <ul>
+                    <li>HMI - H2M</li>
+                    <li>MMI - M2M</li>
+                </ul>
+                <li>Computation</li>
+                <ul>
+                    <li>Speicherung, Organisation, Konservierung</li>
+                </ul>
+                <li>Retention</li>
+                <ul>
+                    <li>DBMS</li>
+                </ul>
+                <li>Coordination</li>
+                <ul>
+                    <li>Administration</li>
+                </ul>
+              </ul>
+            </section>
+            <section>
+              <h2>Aufgaben der Webtechnologie als Disziplin</h2>
+              <p>Inbegriff der Widersprüchlichkeit</p>
+              <p class="fragment" data-fragment-index="1">Vernetzung von Informationen</p>
+              <p class="fragment" data-fragment-index="2">Gezielte Barrieren und Limitierungen</p>
+            </section>
+        </section>
+
+
+        <section>
+
+            <!-- Bild einer regulären Website -->
+            <section data-background-image="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=2010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p class="image-credit">
+                    Foto von Igor Miske auf <a href="https://unsplash.com/de/@igormiske">Unsplash</a>
+                </p>
+            </section>
+        
+            <!-- Bild eines iPhones -->
+            <section data-background-image="https://images.unsplash.com/photo-1528795259021-d8c86e14354c?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p class="image-credit">
+                    Foto von David Švihovec auf <a href="https://unsplash.com/de/@iamdavid_10">Unsplash</a>
+                </p>
+            </section>
+        
+            <!-- Bild einer mobilen Zahlung -->
+            <section data-background-image="https://images.unsplash.com/photo-1556741568-055d848f8bfd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p class="image-credit">
+                    Foto von Christiann Koepke auf <a href="https://unsplash.com/de/@christiannkoepke">Unsplash</a>
+                </p>
+            </section>
+        
+            <!-- Bild des Innenraums eines Tesla -->
+            <section data-background-image="https://images.unsplash.com/photo-1656231678320-828820991b0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p class="image-credit">
+                    Foto von ün LIU auf <a href="https://unsplash.com/de/@vixxer">Unsplash</a>
+                </p>
+            </section>
+        
+            <!-- Bild eines SCADA-Systems -->
+            <section data-background-image="https://upload.wikimedia.org/wikipedia/commons/6/62/Besichtigung_ICE-Instandhaltungswerk_K%C3%B6ln-Nippes_Februar_2018-9398.jpg">
+                <p class="image-credit">
+                    © Raimond Spekking / <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a> (via Wikimedia Commons), <a href="https://commons.wikimedia.org/wiki/File:Besichtigung_ICE-Instandhaltungswerk_K%C3%B6ln-Nippes_Februar_2018-9398.jpg">Besichtigung ICE-Instandhaltungswerk Köln-Nippes Februar 2018-9398</a>
+                </p>
+            </section>
+        
+            <!-- Bild des ELENA-Experiments am CERN -->
+            <section data-background-image="https://images.unsplash.com/photo-1636357582639-27620e21d7c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p class="image-credit">
+                    Foto von Jorge Ramirez auf <a href="https://unsplash.com/de/@jorgedevs">Unsplash</a>
+                </p>
+            </section>
+
+            <!-- Bild des ELENA-Experiments am CERN -->
+            <section data-background-image="https://images.unsplash.com/photo-1559744338-80ff4a0eb577?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p class="image-credit">
+                    Foto von Devon Rogers auf <a href="https://unsplash.com/de/@dev">Unsplash</a>
+                </p>
+            </section>
+
+            <!-- Bild vom Silicon Valley -->
+            <section data-background-image="https://images.unsplash.com/photo-1677484249700-be0b9043f52d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                
+                <style>
+                    .svg-box {
+                      background-color: rgba(255, 255, 255, 0.5);
+                      padding: 1em;
+                      margin: 1em auto;
+                      border-radius: 8px;
+                      width: 30%;
+                      max-width: 600px;
+                    }
+                
+                    .svg-box svg,
+                    .svg-box img {
+                      width: 100%;
+                      height: auto;
+                      display: block;
+                      margin: 0 auto;
+                    }
+                </style>
+                                
+                <div class="svg-box">
+                    <img src="assets/spotify.svg" alt="Spotify Logo" />
+                </div>
+                <div class="svg-box">
+                <img src="assets/openai.svg" alt="OpenAI Logo" />
+                </div>
+
+            
+                <div class="svg-box">
+                <img src="assets/shopify.svg" alt="Shopify Logo" />
+                </div>
+
+                <p class="image-credit">
+                    Foto von Igor Shalyminov auf <a href="https://unsplash.com/de/@ishalyminov">Unsplash</a>
+                </p>
+            </section>
+        
+        </section>
+        
+        <section>   
+            <h2>Was jetzt kommt</h2>
+            <ul>
+                <li>APIs &amp; Protokolle</li>
+                <li>Echtzeitkommunikation</li>
+                <li>Architektur moderner Websysteme</li>
+          </ul>
+        </section>
+
+        <section>
+            <section>
+                <h2>Vorschau auf das Semester</h2>
+            </section>
+            <section>
+                <h2>Handwerkliches Verständnis</h2>
+                <ul>
+                    <li>Serveradministration über SSH</li>
+                    <li>Kooperation mit Git</li>
+                    <li>Use-Case basierter Softwareentwurf</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Zugänglichkeit von Algorithmen und Datenstrukturen</h2>
+                <ul>
+                    <li>Kommunikationsparadigmen</li>
+                    <li>Erstellen von APIs mit FastAPI</li>
+                    <li>SQL, InfluxDB, neo4j</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Authentifizierung und Security</h2>
+                <ul>
+                    <li>Keycloak</li>
+                    <li>HTTPS und CORS</li>
+                    <li>Diffie-Hellmann</li>
+                    <li>RSA</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Betrieb von Infrastruktur</h2>
+                <ul>
+                    <li>Docker</li>
+                    <li>Continous Integration</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Präsentation und Frontend</h2>
+                <ul>
+                    <li>Angular und ngrx</li>
+                    <li>Kotlin</li>
+                    <li>Packaging</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Hardware-Abstraction-Layers fürs Web</h2>
+                <ul>
+                    <li>Kubernetes und CephFS</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+          <h2>Fragen &amp; Diskussion</h2>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: 'fade',
+        plugins: []
+      });
+    </script>
+  </body>
+</html>
